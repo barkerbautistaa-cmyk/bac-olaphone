@@ -25,6 +25,9 @@ const leadCaptureRouter  = require("./routes/leadCapture");
 // Cron de recordatorios de leads
 const { startLeadReminderCron } = require("./reports/leadReminder");
 
+// Cron de sincronización con Google Sheets (reemplaza al extractor en Python)
+const { startCsvSyncCron } = require("./utils/csvSync");
+
 const app  = express();
 const PORT = process.env.PORT || 3000;
 
@@ -152,6 +155,9 @@ app.listen(PORT, () => {
 
   // Iniciar el cron de recordatorios de leads
   startLeadReminderCron();
+
+  // Iniciar el cron de sincronización con Google Sheets
+  startCsvSyncCron();
 });
 
 module.exports = app;
