@@ -1,0 +1,149 @@
+{
+  "updatedAt": "2026-07-08T17:00:00.000Z",
+  "count": 13,
+  "productos": [
+    {
+      "id": "SAMSUNG-S26-ULTRA",
+      "nombre": "Samsung Galaxy S26 Ultra",
+      "stock": 4,
+      "precio": 2499999,
+      "imagen": null,
+      "descripcion": "Pantalla Dynamic AMOLED 2X 6.9\" 120Hz, S-Pen integrado, cámara 200MP con zoom óptico 10x, Snapdragon 8 Elite, 5000mAh, titanio reforzado.",
+      "categoria": "telefonia",
+      "createdAt": "2026-07-08T17:00:00.000Z",
+      "updatedAt": "2026-07-08T17:00:00.000Z"
+    },
+    {
+      "id": "IPHONE-17-PRO-MAX",
+      "nombre": "iPhone 17 Pro Max",
+      "stock": 3,
+      "precio": 2899999,
+      "imagen": null,
+      "descripcion": "Chip A19 Pro, cámara Fusion 48MP + Periscope 5x, pantalla Super Retina XDR 6.9\" ProMotion 120Hz, Action Button, USB-C 40Gbps, titanio grado 5.",
+      "categoria": "telefonia",
+      "createdAt": "2026-07-08T17:00:00.000Z",
+      "updatedAt": "2026-07-08T17:00:00.000Z"
+    },
+    {
+      "id": "REDMI-NOTE-15-PRO",
+      "nombre": "Redmi Note 15 Pro",
+      "stock": 10,
+      "precio": 649999,
+      "imagen": null,
+      "descripcion": "Pantalla AMOLED 6.67\" 144Hz, cámara 200MP con OIS, Snapdragon 7s Gen 3, batería 5500mAh con carga turbo 90W, IP64.",
+      "categoria": "telefonia",
+      "createdAt": "2026-07-08T17:00:00.000Z",
+      "updatedAt": "2026-07-08T17:00:00.000Z"
+    },
+    {
+      "id": "POCOPHONE-F8-ULTRA",
+      "nombre": "Pocophone F8 Ultra",
+      "stock": 6,
+      "precio": 1149999,
+      "imagen": null,
+      "descripcion": "Snapdragon 8 Gen 4, pantalla AMOLED 6.73\" 165Hz 2K, cámara Leica 50MP + tele 50MP, batería 6000mAh carga 120W + inalámbrica 50W, IP68.",
+      "categoria": "telefonia",
+      "createdAt": "2026-07-08T17:00:00.000Z",
+      "updatedAt": "2026-07-08T17:00:00.000Z"
+    },
+    {
+      "id": "MACBOOK-AIR-M2",
+      "nombre": "MacBook Air M2 8GB/256GB",
+      "stock": 2,
+      "precio": 2899999,
+      "imagen": null,
+      "descripcion": "Chip Apple M2, pantalla Liquid Retina 13.6\", hasta 18hs de batería. Ultradelgada.",
+      "categoria": "computacion",
+      "createdAt": "2026-07-07T18:00:00.000Z",
+      "updatedAt": "2026-07-07T18:00:00.000Z"
+    },
+    {
+      "id": "PS5-SLIM-STD",
+      "nombre": "PlayStation 5 Slim Standard",
+      "stock": 3,
+      "precio": 1149999,
+      "imagen": null,
+      "descripcion": "La nueva PS5 Slim más delgada y liviana. Lector de disco, 1TB NVMe SSD, resolución 4K.",
+      "categoria": "importados",
+      "createdAt": "2026-07-07T18:00:00.000Z",
+      "updatedAt": "2026-07-07T18:00:00.000Z"
+    },
+    {
+      "id": "AIRPODS-PRO-2",
+      "nombre": "AirPods Pro 2da Gen (USB-C)",
+      "stock": 7,
+      "precio": 459999,
+      "imagen": null,
+      "descripcion": "Cancelación de ruido activa (ANC) mejorada, chip H2, audio espacial personalizado.",
+      "categoria": "accesorios",
+      "createdAt": "2026-07-07T18:00:00.000Z",
+      "updatedAt": "2026-07-07T18:00:00.000Z"
+    },
+    {
+      "id": "SAMSUNG-BUD2-PRO",
+      "nombre": "Samsung Galaxy Buds2 Pro",
+      "stock": 9,
+      "precio": 249999,
+      "imagen": null,
+      "descripcion": "Sonido Hi-Fi 24bit, ANC inteligente, resistencia al agua IPX7, hasta 8hs de autonomía.",
+      "categoria": "accesorios",
+      "createdAt": "2026-07-07T18:00:00.000Z",
+      "updatedAt": "2026-07-07T18:00:00.000Z"
+    },
+    {
+      "id": "SMARTWATCH-APPLE-S9",
+      "nombre": "Apple Watch Series 9 GPS 41mm",
+      "stock": 4,
+      "precio": 699999,
+      "imagen": null,
+      "descripcion": "Chip S9 SiP, pantalla siempre activa, detección de caídas y accidentes, GPS integrado.",
+      "categoria": "accesorios",
+      "createdAt": "2026-07-07T18:00:00.000Z",
+      "updatedAt": "2026-07-07T18:00:00.000Z"
+    },
+    {
+      "id": "HUB-USBC-7EN1",
+      "nombre": "Hub USB-C 7 en 1 Anker",
+      "stock": 20,
+      "precio": 54999,
+      "imagen": null,
+      "descripcion": "4K HDMI, 3x USB-A, USB-C PD 100W, SD/microSD. Compatible con MacBook y iPad Pro.",
+      "categoria": "accesorios",
+      "createdAt": "2026-07-07T18:00:00.000Z",
+      "updatedAt": "2026-07-07T18:00:00.000Z"
+    },
+    {
+      "id": "IPAD-10-WIFI",
+      "nombre": "iPad 10ma Gen 64GB Wi-Fi",
+      "stock": 6,
+      "precio": 849999,
+      "imagen": null,
+      "descripcion": "Pantalla Liquid Retina 10.9\", chip A14 Bionic, cámara trasera 12MP, conector USB-C.",
+      "categoria": "computacion",
+      "createdAt": "2026-07-07T18:00:00.000Z",
+      "updatedAt": "2026-07-07T18:00:00.000Z"
+    },
+    {
+      "id": "CARGADOR-ANKER-65W",
+      "nombre": "Cargador Anker Nano 65W GaN",
+      "stock": 30,
+      "precio": 39999,
+      "imagen": null,
+      "descripcion": "Carga rápida GaN 65W. 1x USB-C. Compatible con iPhone, Android, MacBook, iPad.",
+      "categoria": "accesorios",
+      "createdAt": "2026-07-07T18:00:00.000Z",
+      "updatedAt": "2026-07-07T18:00:00.000Z"
+    },
+    {
+      "id": "ZAPATILLAS-NIKE-AIR1",
+      "nombre": "Nike Air Jordan 1 Retro (Importadas)",
+      "stock": 0,
+      "precio": 389999,
+      "imagen": null,
+      "descripcion": "Las legendarias Air Jordan 1 Retro. Importadas directamente. Consultar talles disponibles por WhatsApp.",
+      "categoria": "importados",
+      "createdAt": "2026-07-07T18:00:00.000Z",
+      "updatedAt": "2026-07-07T18:00:00.000Z"
+    }
+  ]
+}

@@ -32,6 +32,12 @@ const app  = express();
 const PORT = process.env.PORT || 3000;
 
 // ---------------------------------------------------------------------------
+// SERVIR FRONTEND ESTÁTICO (carpeta public/)
+// ---------------------------------------------------------------------------
+// La página web completa se sirve desde el mismo servidor, eliminando CORS.
+app.use(express.static(path.join(__dirname, "public")));
+
+// ---------------------------------------------------------------------------
 // MIDDLEWARE GLOBAL
 // ---------------------------------------------------------------------------
 

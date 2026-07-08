@@ -1,0 +1,68 @@
+# Configuración de Netlify para la tienda estática
+# Este archivo define redirects, headers y reglas de build.
+
+# ── CONFIGURACIÓN DE BUILD ────────────────────────────────────────────────────
+[build]
+  # No hay proceso de build (HTML/JS puro)
+  # publish = "."   ← directorio raíz del sitio
+
+# ── PROXY REDIRECT: /api/* → Backend Cloud ───────────────────────────────────
+# IMPORTANTE: Reemplazar la URL del placeholder con la URL real del backend.
+# Este redirect resuelve el problema de CORS haciendo que el frontend
+# llame a /api/... (mismo dominio) y Netlify lo proxie al backend externo.
+#
+# En Netlify Dashboard: Site settings → Environment variables
+# Agregar: BACKEND_URL = https://tu-backend.railway.app
+#
+# NOTA: Netlify no soporta variables de entorno en netlify.toml directamente
+# para los redirects. Hay dos opciones:
+#   1. Hardcodear la URL aquí (más simple, requiere cambiar si mueve el backend)
+#   2. Usar Netlify Functions como proxy (más flexible pero agrega complejidad)
+# Esta config usa la opción 1. Reemplazar la URL cuando se despliegue.
+
+[[redirects]]
+  from   = "/api/*"
+  to     = "https://TU-BACKEND-URL.railway.app/:splat"
+  status = 200
+  force  = true
+  # Headers que el proxy agrega al request saliente
+  [redirects.headers]
+    X-Forwarded-For  = ":client-ip"
+    X-Netlify-Proxy  = "true"
+
+# ── REDIRECT: /products.json → Backend Cloud ─────────────────────────────────
+# El frontend hace fetch a /products.json (mismo dominio).
+# Netlify lo redirige al endpoint GET del backend.
+[[redirects]]
+  from   = "/products.json"
+  to     = "https://TU-BACKEND-URL.railway.app/products.json"
+  status = 200
+  force  = true
+
+# ── SPA FALLBACK (por si se agrega routing en el futuro) ─────────────────────
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
+
+# ── HEADERS DE SEGURIDAD Y CACHÉ ─────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Seguridad básica
+    X-Frame-Options        = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    # Scripts: cachear 1 hora (el deploy de Netlify invalida el caché)
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    # HTML: no cachear (siempre fresco)
+    Cache-Control = "no-cache, no-store, must-revalidate"

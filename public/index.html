@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>OlaPhone Olavarría | Celulares · Accesorios · Servicio Técnico</title>
+  <meta name="description" content="OlaPhone — Tu tienda de tecnología en Olavarría. Celulares, computación, accesorios y servicio técnico. Envíos a todo el país." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#E91E8C" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OlaPhone Olavarría — Tecnología y Servicio Técnico" />
+  <meta property="og:description" content="Celulares, computación, accesorios. Olavarría, Bs. As. Envíos a todo el país." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./assets/hero-banner.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/olaphone.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       TOPBAR ANUNCIO
+  ══════════════════════════════════════════════════════════════ -->
+  <div class="topbar" role="banner" aria-label="Anuncio promocional">
+    <span class="topbar-icon">⚡</span>
+    <span>Envíos a todo el país · Garantía oficial · Financiación disponible</span>
+    <span class="topbar-icon">⚡</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════════════ -->
+  <header class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="navbar-inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="navbar-logo" aria-label="OlaPhone - Ir al inicio">
+        <div class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="44" height="44">
+            <circle cx="22" cy="22" r="21" stroke="#E91E8C" stroke-width="2"/>
+            <path d="M22 10 L22 14" stroke="#E91E8C" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="22" cy="22" r="8" stroke="#E91E8C" stroke-width="2"/>
+            <path d="M14.5 14.5 A11 11 0 0 0 11 22" stroke="#E91E8C" stroke-width="2" stroke-linecap="round"/>
+            <path d="M29.5 14.5 A11 11 0 0 1 33 22" stroke="#E91E8C" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="logo-text">Ola<span class="logo-accent">Phone</span></span>
+      </a>
+
+      <!-- Nav links (desktop) -->
+      <nav class="nav-links" aria-label="Menú">
+        <a href="#inicio"   class="nav-link" id="nav-inicio">Inicio</a>
+        <a href="#catalogo" class="nav-link" id="nav-catalogo">Catálogo</a>
+        <a href="#galeria"  class="nav-link" id="nav-galeria">Galería</a>
+        <a href="#contacto" class="nav-link" id="nav-contacto">Contacto</a>
+      </nav>
+
+      <!-- Carrito + Hamburger -->
+      <div class="navbar-actions">
+        <button
+          id="btn-cart-toggle"
+          class="btn-cart-nav"
+          aria-label="Ver carrito de compras"
+          aria-expanded="false"
+          aria-controls="cart-drawer"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span id="cart-badge" class="cart-badge" role="status" aria-live="polite" aria-label="0 ítems en el carrito">0</span>
+        </button>
+
+        <button
+          id="btn-menu-mobile"
+          class="btn-menu-mobile"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú mobile -->
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Menú móvil">
+      <a href="#inicio"   class="mobile-nav-link" id="mnav-inicio">Inicio</a>
+      <a href="#catalogo" class="mobile-nav-link" id="mnav-catalogo">Catálogo</a>
+      <a href="#galeria"  class="mobile-nav-link" id="mnav-galeria">Galería</a>
+      <a href="#contacto" class="mobile-nav-link" id="mnav-contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       HERO BANNER
+  ══════════════════════════════════════════════════════════════ -->
+  <section id="inicio" class="hero" aria-label="Banner principal">
+    <div class="hero-bg">
+      <img src="./assets/hero-banner.png" alt="" class="hero-bg-img" aria-hidden="true" />
+      <div class="hero-bg-overlay" aria-hidden="true"></div>
+      <!-- Partículas decorativas -->
+      <div class="hero-particles" aria-hidden="true">
+        <span class="particle particle-1"></span>
+        <span class="particle particle-2"></span>
+        <span class="particle particle-3"></span>
+        <span class="particle particle-4"></span>
+        <span class="particle particle-5"></span>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="hero-tag-dot" aria-hidden="true"></span>
+        Olavarría · Buenos Aires
+      </div>
+
+      <h1 class="hero-title">
+        La tech que<br/>
+        <span class="hero-title-accent">querés, acá.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Celulares · Computación · Accesorios · Servicio Técnico<br/>
+        Envíos a todo el país con garantía oficial.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#catalogo" class="btn-primary" id="btn-hero-catalogo">
+          Ver catálogo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/542284641652" target="_blank" rel="noopener noreferrer" class="btn-secondary" id="btn-hero-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+          </svg>
+          Consultar
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats" aria-label="Estadísticas del local">
+        <div class="hero-stat">
+          <span class="hero-stat-number">46.5K</span>
+          <span class="hero-stat-label">Seguidores</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">729+</span>
+          <span class="hero-stat-label">Publicaciones</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">100%</span>
+          <span class="hero-stat-label">Garantía</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CATEGORÍAS
+  ══════════════════════════════════════════════════════════════ -->
+  <section class="categories-section" aria-label="Categorías de productos">
+    <div class="container">
+      <div class="categories-grid" role="list">
+        <div class="category-card" role="listitem" data-filter="telefonia">
+          <div class="category-icon" aria-hidden="true">📱</div>
+          <span class="category-name">Telefonía</span>
+        </div>
+        <div class="category-card" role="listitem" data-filter="computacion">
+          <div class="category-icon" aria-hidden="true">💻</div>
+          <span class="category-name">Computación</span>
+        </div>
+        <div class="category-card" role="listitem" data-filter="accesorios">
+          <div class="category-icon" aria-hidden="true">🎧</div>
+          <span class="category-name">Accesorios</span>
+        </div>
+        <div class="category-card" role="listitem" data-filter="servicio">
+          <div class="category-icon" aria-hidden="true">🔧</div>
+          <span class="category-name">Servicio Técnico</span>
+        </div>
+        <div class="category-card" role="listitem" data-filter="importados">
+          <div class="category-icon" aria-hidden="true">🌍</div>
+          <span class="category-name">Importados</span>
+        </div>
+        <div class="category-card" role="listitem" data-filter="todos">
+          <div class="category-icon" aria-hidden="true">✨</div>
+          <span class="category-name">Ver Todo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CATÁLOGO DE PRODUCTOS
+  ══════════════════════════════════════════════════════════════ -->
+  <section id="catalogo" class="catalog-section" aria-label="Catálogo de productos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Catálogo</span>
+        <h2 class="section-title">Nuestros Productos</h2>
+        <p class="section-subtitle">Stock actualizado en tiempo real desde nuestro sistema.</p>
+      </div>
+
+      <!-- Status de carga -->
+      <div id="products-status" class="products-status" role="status" aria-live="polite"></div>
+
+      <!-- Grilla de productos -->
+      <div id="products-grid" class="products-grid" role="list" aria-label="Listado de productos">
+        <!-- Skeletons de carga -->
+        <div class="product-skeleton" aria-hidden="true">
+          <div class="skeleton-img"></div>
+          <div class="skeleton-line skeleton-line-lg"></div>
+          <div class="skeleton-line skeleton-line-sm"></div>
+          <div class="skeleton-line skeleton-line-md"></div>
+        </div>
+        <div class="product-skeleton" aria-hidden="true">
+          <div class="skeleton-img"></div>
+          <div class="skeleton-line skeleton-line-lg"></div>
+          <div class="skeleton-line skeleton-line-sm"></div>
+          <div class="skeleton-line skeleton-line-md"></div>
+        </div>
+        <div class="product-skeleton" aria-hidden="true">
+          <div class="skeleton-img"></div>
+          <div class="skeleton-line skeleton-line-lg"></div>
+          <div class="skeleton-line skeleton-line-sm"></div>
+          <div class="skeleton-line skeleton-line-md"></div>
+        </div>
+        <div class="product-skeleton" aria-hidden="true">
+          <div class="skeleton-img"></div>
+          <div class="skeleton-line skeleton-line-lg"></div>
+          <div class="skeleton-line skeleton-line-sm"></div>
+          <div class="skeleton-line skeleton-line-md"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       GALERÍA
+  ══════════════════════════════════════════════════════════════ -->
+  <section id="galeria" class="gallery-section" aria-label="Galería de la tienda">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Galería</span>
+        <h2 class="section-title">Nuestra Tienda</h2>
+        <p class="section-subtitle">Visitanos en Olavarría o comprá online con envío a todo el país.</p>
+      </div>
+
+      <div class="gallery-grid" role="list" aria-label="Galería de imágenes">
+        <!-- Imagen grande: teléfonos -->
+        <figure class="gallery-item gallery-item-large" role="listitem">
+          <img
+            src="./assets/gallery-phones.png?v=3"
+            alt="Galaxy S26 Ultra, iPhone 17 Pro Max, Redmi Note 15 Pro, Pocophone F8 Ultra"
+            class="gallery-img"
+            loading="eager"
+            width="800"
+            height="600"
+          />
+          <figcaption class="gallery-caption">
+            <span class="gallery-caption-tag">📱 Telefonía</span>
+            <span class="gallery-caption-text">Los últimos modelos al mejor precio</span>
+          </figcaption>
+        </figure>
+
+        <!-- Imagen: accesorios -->
+        <figure class="gallery-item" role="listitem">
+          <img
+            src="./assets/gallery-accesorios.png"
+            alt="Accesorios tech: auriculares, fundas, cables y más"
+            class="gallery-img"
+            loading="lazy"
+            width="400"
+            height="400"
+          />
+          <figcaption class="gallery-caption">
+            <span class="gallery-caption-tag">🎧 Accesorios</span>
+            <span class="gallery-caption-text">Todo para tu dispositivo</span>
+          </figcaption>
+        </figure>
+
+        <!-- Tarjeta de servicio técnico -->
+        <figure class="gallery-item gallery-service-card" role="listitem" aria-label="Servicio técnico">
+          <div class="service-icon" aria-hidden="true">🔧</div>
+          <h3 class="service-title">Servicio Técnico</h3>
+          <p class="service-description">Reparación profesional de celulares, tablets y laptops. Diagnóstico gratis.</p>
+          <a
+            href="https://wa.me/542284641652?text=Hola%20OlaPhone!%20Necesito%20servicio%20t%C3%A9cnico."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-service"
+            id="btn-gallery-service"
+            aria-label="Consultar servicio técnico por WhatsApp"
+          >
+            Consultar por WhatsApp
+          </a>
+        </figure>
+
+        <!-- Tarjeta de envíos -->
+        <figure class="gallery-item gallery-shipping-card" role="listitem" aria-label="Información de envíos">
+          <div class="shipping-icons" aria-hidden="true">
+            <span>🚚</span>
+            <span>📦</span>
+            <span>🛡️</span>
+          </div>
+          <h3 class="shipping-title">Envíos a todo el país</h3>
+          <ul class="shipping-list" aria-label="Beneficios de envío">
+            <li>Correo Argentino y OCA</li>
+            <li>Seguimiento en tiempo real</li>
+            <li>Embalaje seguro garantizado</li>
+            <li>Garantía en todos los productos</li>
+          </ul>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CARRITO DE COMPRAS (Drawer lateral)
+  ══════════════════════════════════════════════════════════════ -->
+  <div
+    id="cart-overlay"
+    class="cart-overlay"
+    aria-hidden="true"
+    role="presentation"
+  ></div>
+
+  <aside
+    id="cart-drawer"
+    class="cart-drawer"
+    role="complementary"
+    aria-label="Carrito de compras"
+    aria-hidden="true"
+  >
+    <div class="cart-drawer-header">
+      <h2 class="cart-drawer-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        Mi Carrito
+      </h2>
+      <button
+        id="btn-cart-close"
+        class="btn-cart-close"
+        aria-label="Cerrar carrito"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Ítems del carrito -->
+    <div id="cart-items" class="cart-items-container" role="list" aria-label="Productos en el carrito">
+      <div id="cart-empty" class="cart-empty">
+        <div class="cart-empty-icon" aria-hidden="true">🛒</div>
+        <p class="cart-empty-text">Tu carrito está vacío</p>
+        <a href="#catalogo" class="btn-outline" id="btn-cart-empty-catalog">Ver catálogo</a>
+      </div>
+    </div>
+
+    <!-- Resumen del carrito -->
+    <div class="cart-footer" id="cart-footer" hidden>
+      <div class="cart-summary">
+        <div class="cart-summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal" aria-live="polite">$0</span>
+        </div>
+        <div class="cart-summary-row cart-summary-total">
+          <span>Total</span>
+          <span id="cart-total" aria-live="polite">$0</span>
+        </div>
+      </div>
+
+      <!-- Formulario de checkout integrado en el drawer -->
+      <form id="checkout-form" class="checkout-form" aria-label="Datos de contacto para el pedido" novalidate>
+        <h3 class="checkout-form-title">Tus datos</h3>
+
+        <div class="form-group">
+          <label for="cliente-nombre" class="form-label">Nombre y apellido *</label>
+          <input
+            type="text"
+            id="cliente-nombre"
+            name="nombre"
+            class="form-input"
+            required
+            autocomplete="name"
+            placeholder="Juan García"
+            aria-required="true"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="cliente-telefono" class="form-label">WhatsApp (sin 0 ni 15) *</label>
+          <div class="form-input-prefix-wrap">
+            <span class="form-input-prefix" aria-hidden="true">+54 9</span>
+            <input
+              type="tel"
+              id="cliente-telefono"
+              name="telefono"
+              class="form-input form-input-prefixed"
+              required
+              placeholder="2284641652"
+              pattern="[0-9]{6,12}"
+              aria-required="true"
+              aria-describedby="telefono-hint"
+              inputmode="numeric"
+            />
+          </div>
+          <small id="telefono-hint" class="form-hint">Ej: 2284641652 (con código de área)</small>
+        </div>
+
+        <div class="form-group">
+          <label for="cliente-notas" class="form-label">Notas <span class="form-optional">(opcional)</span></label>
+          <textarea
+            id="cliente-notas"
+            name="notas"
+            class="form-input form-textarea"
+            rows="2"
+            placeholder="Horario, consultas sobre el producto..."
+          ></textarea>
+        </div>
+
+        <!-- Errores -->
+        <div id="form-errors" class="form-errors" role="alert" aria-live="assertive" hidden></div>
+
+        <!-- Botón de checkout -->
+        <button type="submit" id="btn-checkout" class="btn-checkout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          Finalizar Compra
+        </button>
+
+        <!-- Estado del checkout -->
+        <div id="checkout-status" class="checkout-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CONTACTO
+  ══════════════════════════════════════════════════════════════ -->
+  <section id="contacto" class="contact-section" aria-label="Sección de contacto">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">¿Tenés alguna consulta?</h2>
+        <p class="section-subtitle">Estamos para ayudarte. Respondemos rápido por WhatsApp.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Card principal de WhatsApp -->
+        <div class="contact-card contact-card-main">
+          <div class="contact-wa-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+            </svg>
+          </div>
+          <h3 class="contact-card-title">WhatsApp</h3>
+          <p class="contact-card-text">Consultás online, respondemos al toque.</p>
+          <p class="contact-card-number">+54 9 228 464-1652</p>
+          <a
+            href="https://wa.me/542284641652?text=Hola%20OlaPhone!%20Quisiera%20hacer%20una%20consulta."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-wa-contact"
+            id="btn-contact-whatsapp"
+            aria-label="Contactar a OlaPhone por WhatsApp"
+          >
+            Escribir por WhatsApp
+          </a>
+        </div>
+
+        <!-- Card Instagram -->
+        <div class="contact-card">
+          <div class="contact-ig-icon" aria-hidden="true">📸</div>
+          <h3 class="contact-card-title">Instagram</h3>
+          <p class="contact-card-text">Seguinos para ver novedades, ofertas y más.</p>
+          <a
+            href="https://www.instagram.com/olaphone.olavarria"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-ig-contact"
+            id="btn-contact-instagram"
+            aria-label="Ver Instagram de OlaPhone"
+          >
+            @olaphone.olavarria
+          </a>
+        </div>
+
+        <!-- Card ubicación -->
+        <div class="contact-card">
+          <div class="contact-location-icon" aria-hidden="true">📍</div>
+          <h3 class="contact-card-title">Ubicación</h3>
+          <p class="contact-card-text">Olavarría, Buenos Aires.</p>
+          <p class="contact-card-text">Envíos a todo el país.</p>
+          <span class="contact-badge">✅ Verificado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-logo" aria-label="OlaPhone">
+            <div class="logo-icon logo-icon-sm" aria-hidden="true">
+              <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                <circle cx="22" cy="22" r="21" stroke="#E91E8C" stroke-width="2"/>
+                <path d="M22 10 L22 14" stroke="#E91E8C" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="22" cy="22" r="8" stroke="#E91E8C" stroke-width="2"/>
+                <path d="M14.5 14.5 A11 11 0 0 0 11 22" stroke="#E91E8C" stroke-width="2" stroke-linecap="round"/>
+                <path d="M29.5 14.5 A11 11 0 0 1 33 22" stroke="#E91E8C" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="logo-text logo-text-sm">Ola<span class="logo-accent">Phone</span></span>
+          </div>
+          <p class="footer-tagline">Tecnología y Servicio Técnico en Olavarría.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#catalogo" class="footer-link">Catálogo</a>
+          <a href="#galeria"  class="footer-link">Galería</a>
+          <a href="#contacto" class="footer-link">Contacto</a>
+          <a href="https://www.instagram.com/olaphone.olavarria" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> OlaPhone Olavarría. Todos los derechos reservados.
+        </p>
+        <p id="stock-last-update" class="footer-stock-update" aria-live="polite"></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       BOTÓN FLOTANTE DE WHATSAPP
+  ══════════════════════════════════════════════════════════════ -->
+  <!-- Botón flotante WhatsApp (abre popup antes de ir a WA) -->
+  <button
+    class="wa-float-btn"
+    id="btn-wa-float"
+    aria-label="Contactar a OlaPhone por WhatsApp"
+    title="Chateá con nosotros"
+    type="button"
+  >
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+    <span class="wa-float-pulse" aria-hidden="true"></span>
+  </button>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       POPUP DE CAPTURA DE LEAD (se abre al hacer click en el botón WA)
+  ══════════════════════════════════════════════════════════════ -->
+  <div id="wa-lead-overlay" class="wa-lead-overlay" role="dialog" aria-modal="true" aria-labelledby="wa-lead-title" hidden>
+    <div class="wa-lead-popup" role="document">
+
+      <!-- Encabezado -->
+      <div class="wa-lead-header">
+        <div class="wa-lead-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+          </svg>
+        </div>
+        <div class="wa-lead-header-text">
+          <h2 id="wa-lead-title" class="wa-lead-title">¡Hola! 👋</h2>
+          <p class="wa-lead-subtitle">Completá tus datos y te atendemos al toque</p>
+        </div>
+        <button class="wa-lead-close" id="btn-wa-lead-close" aria-label="Cerrar" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Formulario -->
+      <form id="wa-lead-form" class="wa-lead-form" novalidate>
+        <div class="wa-lead-field">
+          <label for="lead-name" class="wa-lead-label">Tu nombre</label>
+          <input
+            type="text"
+            id="lead-name"
+            name="nombre"
+            class="wa-lead-input"
+            placeholder="Ej: Juan García"
+            autocomplete="given-name"
+            required
+            maxlength="60"
+          />
+        </div>
+        <div class="wa-lead-field">
+          <label for="lead-phone" class="wa-lead-label">Tu WhatsApp</label>
+          <div class="wa-lead-phone-wrap">
+            <span class="wa-lead-prefix">🇦🇷 +54</span>
+            <input
+              type="tel"
+              id="lead-phone"
+              name="telefono"
+              class="wa-lead-input wa-lead-input--phone"
+              placeholder="9 221 555-1234"
+              autocomplete="tel"
+              required
+              maxlength="20"
+              pattern="[0-9\s\-]{6,15}"
+            />
+          </div>
+        </div>
+        <p class="wa-lead-privacy">🔒 Tus datos solo se usan para contactarte. No spam.</p>
+        <button type="submit" class="wa-lead-submit" id="btn-wa-lead-submit">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+          </svg>
+          Ir a WhatsApp
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       SCRIPTS
+  ══════════════════════════════════════════════════════════════ -->
+  <!-- Configuración global inyectable por Netlify/build -->
+  <script>
+    window.PRODUCTS_URL     = "/products.json";
+    window.CART_WEBHOOK_URL  = "/webhook/cart";
+    window.LEAD_CAPTURE_URL  = "/lead/capture";
+    window.WEBHOOK_SECRET   = "cambia_esto_por_un_token_seguro_de_32_chars";
+    window.OWNER_PHONE      = "542284641652";
+    document.getElementById("footer-year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="js/cart.js"     defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+  <script src="js/ui.js"       defer></script>
+  <script src="js/waLead.js"   defer></script>
+
+</body>
+</html>
