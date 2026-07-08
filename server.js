@@ -95,7 +95,7 @@ function requireWebhookAuth(req, res, next) {
 // El archivo es generado/actualizado por el sub-componente A (syncStock).
 const PRODUCTS_FILE = path.join(__dirname, "data", "products.json");
 
-app.get("/products.json", (req, res) => {
+app.get("/api/catalog.json", (req, res) => {
   if (!fs.existsSync(PRODUCTS_FILE)) {
     return res.status(404).json({ error: "Catálogo de productos no disponible aún." });
   }
